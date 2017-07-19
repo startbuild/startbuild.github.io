@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telphone=no"/>
+	<title>个人中心</title>
+	<link rel="stylesheet" type="text/css" href="../src/css/meibao.ui.css">
+  <link rel="stylesheet" type="text/css" href="../src/css/personcenter.css">
+  <script src="../src/js/lib/rem.js"></script>
+</head>
+<body>
+    <header id="header" class="header">
+        <span>个人中心</span>
+    </header>
+    <div class="login-top">
+        <a href="javascript:;" onclick="personalMsg()">
+            <div class="login-head">
+                <img src="" alt="" class="login-headimg">
+            </div>
+            <p class="login-state"><span id="labUserName">请点击登录</span></p>
+        </a>
+    </div>
+    <div class="login-con">
+      <a href="javascript:;" onclick="myCollect()">
+        <div class="login-row" >
+            <span class="ico-money"></span>              
+            <span class="login-span">我的收藏</span>            
+            <div class="login-right">
+                <span class="ico-link-r">></span>
+            </div>
+        </div>
+       </a>
+       <a href="javascript:;"  onclick="mySet()">
+            <div class="login-row" >
+                <span class="ico-money"></span>              
+                <span class="login-span">设置</span>            
+                <div class="login-right">
+                    <span class="ico-link-r">></span>
+                </div>
+            </div> 
+       </a>
+       <a href="javascript:;" onclick="myHelp();">
+         <div class="login-row">
+             <span class="ico-money"></span>              
+             <span class="login-span">帮助中心</span>  
+             <div class="login-right">
+                <span class="ico-link-r">></span>
+            </div>
+         </div>
+       </a>
+       
+       <a href="javascript:;"  onclick="myAdvise()">
+            <div class="login-row" >
+                <span class="ico-money"></span>              
+                <span class="login-span">问题反馈</span>            
+                <div class="login-right">
+                    <span class="ico-link-r">></span>
+                </div>
+            </div> 
+       </a>
+    </div>  
+	<!-- footer -->
+    <footer id="footer" class="footer">
+        <a href="../index.html">
+            <nav>
+                <span class="ico-nav ico-home"></span>
+                <p class="footer-tit">首页</p>
+            </nav>
+        </a>
+        <a href="../news/news.html">
+            <nav>
+                <span class="ico-nav ico-news"></span>
+                <p class="footer-tit">要闻</p>
+            </nav>
+        </a>
+        <a href="../special/special.html">
+            <nav>
+                <span class="ico-nav ico-special"></span>
+                <p class="footer-tit">专题</p>
+            </nav>
+        </a>
+        <a href="personal.html" class="navchoose">
+            <nav>
+                <span class="ico-nav ico-person"></span>
+                <p class="footer-tit"> 个人</p>
+            </nav>
+        </a>
+    </footer>
+</body>
+</html>
+<script src="../src/js/lib/jquery/jquery-2.2.0.js"></script>
+<script src="../src/js/lib/artTemplate/template.js"></script>
+<script src="../src/js/widget/swiper/swiper-3.2.7.min.js"></script>
+<script src="../src/js/lib/jquery/plugin/iscroll-probe.js"></script>
+<script src="../src/js/lib/fastclick.js"></script>
+<script src="../src/js/util/common.js"></script>
+<script src="../src/js/util/webviewInterface.js"></script>
+<script src="../src/js/util/pullIscroll.js"></script>
+<script src="../src/js/personal/person.js"></script>

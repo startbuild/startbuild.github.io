@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  	<meta name="format-detection" content="telphone=no"/>
+	<title>个人信息</title>
+	<link rel="stylesheet" type="text/css" href="../src/css/meibao.ui.css">
+  	<link rel="stylesheet" type="text/css" href="../src/css/personcenter.css">
+  	<link rel="stylesheet" href="../src/js/widget/jquery.fileupload/css/jquery.fileupload.css">
+  	<script src="../src/js/lib/rem.js"></script>
+</head>
+<body>
+	<header id="header" class="header">
+		<div class="mei-btn-back" id="btnBackHome">返回</div>
+		<span>个人信息</span>
+	</header>
+	<ul id="personInfo" class="personInfo">
+		<!-- <script id="tmplPersonal" type="text/html"> -->
+			<!-- 头像 -->
+			<li class="msg-head">
+				<div class="msg-left">头像</div>
+				<div class="msg-right">
+					<!-- <span class="upload fileinput-button btn-upload person-load-btn">
+			            <i class="icon-plus icon-white"></i>
+			            {{if data.userImg !=""}}
+			            	<img id="headImg" src="{{data.userImg}}">
+			            {{else}}
+			            	<img id="headImg" src="../src/images/default/touxiang.png" alt="">
+			            {{/if}}
+			            <input id="fileupload" type="file" name="userfile"/>
+			        </span> -->
+			        <span class="ico-link-r">></span>
+				</div>
+			</li>
+			<!-- 用户名 -->
+			<li class="msg-name">
+				<div class="msg-left">用户名</div>
+				<div class="msg-right">
+					<!-- <span class="msg-span" id="useName">{{data.userName}}</span> -->
+					<!-- <span class="msg-span" id="useName">></span> -->
+					<span class="ico-link-r">></span>
+				</div>
+			</li>
+			<!-- 等级 -->
+			<li class="msg-level">
+				<div class="msg-left">等级</div>
+				<div class="msg-right">lv1</div>
+			</li>
+		<!-- </script> -->
+	</ul>
+	<div class="menu">
+		<ul class="msg-head-bottom" >
+			<li class="paizhao">拍照</li>
+			<li class="choose">从手机相册选择</li>
+			<li class="cancel">取消</li>
+		</ul>
+	</div>
+</body>
+</html>
+<script src="../src/js/lib/jquery/jquery-2.2.0.min.js"></script>
+<script src="../src/js/lib/artTemplate/template.js"></script>
+<script src="../src/js/widget/jquery.fileupload/js/vendor/jquery.ui.widget.js"></script>
+<script src="../src/js/widget/jquery.fileupload/js/jquery.iframe-transport.js"></script>
+<script src="../src/js/widget/jquery.fileupload/js/jquery.fileupload.js"></script>
+<script src="../src/js/widget/calendar/mobiscroll.js" type="text/javascript"></script>
+<script src="../src/js/widget/layer/layer.js"></script>
+<script src="../src/js/lib/fastclick.js"></script>
+<script src="../src/js/util/webviewInterface.js"></script>
+<script src="../src/js/util/common.js"></script>
+<script src="../src/js/config.js"></script>
+<script src="../src/js/dbutil.js"></script>

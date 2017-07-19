@@ -1,0 +1,204 @@
+/*-------------------------------------top-------------------------------------*/
+.header {
+	height: .8rem;
+	line-height: .8rem;
+	overflow: hidden;
+	text-align: center;
+	font-size: .36rem;
+}
+.mei-btn-back {
+	float: left;
+	width: 20%;
+	font-size:.36rem;
+	color:#f00;
+	text-align:center;
+	background:#ccc;
+}
+.hap-header-search {
+    float: left;
+    margin-top: 0;
+    width: 5rem;
+}
+.hap-header-r {
+    position: absolute;
+    top: 0;
+    right: .2rem;
+    font-size: .28rem;
+    z-index: 10;
+}
+.ipt-large {
+    margin-top: .1rem;
+    padding-left: .55rem;
+    border: 1px solid #4a4a4a;
+    height: .56rem;
+    width: 5rem;
+    font-size: .28rem;
+    border-radius: .3rem;
+}
+.closelight-position {
+    position: absolute;
+    right: 1.2rem;
+    top: .02rem;
+}
+.navigation {
+	margin-top: .1rem;
+	overflow: hidden;
+	background:#333;
+	color: #fff;
+}
+.navigation li {
+	float: left;
+	width:50%;
+	height: .8rem;
+	line-height: .8rem;
+	text-align: center;
+	font-size:.24rem;
+}
+.swiper-wrapper {
+	display: -webkit-box;
+}
+.swiper-wrapper li {
+	width: 100%;
+	height: 3rem;
+}
+.swiper-wrapper img { 
+	width: 100%;
+	height: 3rem;
+}
+/*-------------------------------------搜索页search.html-------------------------------------*/
+.mei-record {
+	position: relative;
+}
+.search-tit {
+	margin-left: .4rem;
+	margin-top: .4rem;
+	font-size: .36rem;
+}
+.ico-del {
+	display: block;
+	position: absolute;
+	right: .4rem;
+	top: 0; 
+	width: .8rem;
+	height: .4rem;
+	line-height: .4rem;
+	background:#333;
+	color: #fff;
+	text-align: center;
+	font-size: .24rem;
+}
+.mei-record ul,.hot-search ul {
+	margin-top: .4rem;
+	margin-left: .2rem;
+}
+.mei-record ul li,.hot-search ul li{
+	float: left;
+	margin-right: .2rem;
+	padding: .2rem;
+	font-size: .24rem;
+	border: 1px solid #333;
+}
+
+/*-------------------------------------联动-------------------------------------*/
+.active {
+	color: red;
+}
+.device {
+	display: none;
+	position: absolute;
+    left: 0;
+    top: 1.7rem;
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	height: 60%;
+	font-size: .36rem;
+}
+.device div {
+	height: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	overflow-y: auto;
+}
+.deviceLeft {
+	width: 30%;
+	float: left;
+	padding-left: .2rem;
+	border-right: 1px solid #ebebeb;
+}
+.deviceLeft ul li {
+	width: 100%;
+	border-bottom: 1px solid #ebebeb;
+	padding: .3rem 0px;
+}
+.deviceCenter {
+	background: #fafafa;
+	width: 70%;
+	float: left;
+	padding-left: .2rem;
+	border-right: 1px solid #e7e7e7;
+}
+.deviceCenter ul li {
+	width: 100%;
+	border-bottom: 1px solid #e7e7e7;
+	padding: .3rem 0px;
+}
+.deviceRight {
+	background: #f0f0f0;
+	width: 40%;
+	float: left;
+	padding-left: .2rem;
+	display: none;
+}
+.deviceRight ul li {
+	width: 100%;
+	border-bottom: 1px solid #e7e7e7;
+	padding: .2rem 0px;
+}
+
+/*-------------------------------------new_device.html-------------------------------------*/
+.screen-li {
+	float: left;
+	margin: .3rem .2rem 0 .2rem;
+	width: 43%;
+	height: 1rem;
+	text-align: center;
+	font-size: .36rem;
+	background: #ccc;
+}
+.ico-arrow {
+	margin-left: .2rem;
+	display: inline-block;
+	background: url("../images/arrow.png") no-repeat 0 0;
+	background-size: 21px 12px;
+	width: 21px;
+	height: 12px;
+}
+.rotate {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+}
+.show{
+	display: block;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+}
+/*-------------------------------------搜索结果default.html-------------------------------------*/
+.default-ul {
+	margin-top: 1rem;
+	font-size: .36rem;
+}
+.default-ul li {
+	float: left;
+	width: 50%;
+	height: 2rem;
+	background: #ccc;
+	text-align: center;
+	font-size: .36rem;
+}

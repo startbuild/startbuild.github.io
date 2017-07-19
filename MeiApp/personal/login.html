@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telphone=no"/>
+	<title>登录</title>
+	<link rel="stylesheet+" type="text/css" href="../src/css/meibao.ui.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/personcenter.css">
+    <script src="../src/js/lib/rem.js"></script>
+</head>
+<body>
+	<header id="header" class="header">
+        <div class="mei-btn-back" id="btnBackHome">返回</div>
+        <span>登录</span>
+    </header>
+    <form id="loginForm" class="loginForm">
+        <div class="login-main">
+            <div class="form-row">
+                <span class="login-name">用户名</span>
+                <input type="text" class="input-width" id="txtLoginName" name="txtLoginName"  onkeyup="showX(this)" placeholder="请输入用户名/手机号"/>
+                <p id="btnClear" class="ico-x hide">X</p>
+            </div>
+            <div class="form-row">
+                <span class="login-password">密码</span>
+                <input type="password" class="input-width" id="txtPwd" name="txtPwd" value=""  onkeyup="showX(this)" placeholder="请输入密码"/>
+                <p id="btnEye" class="ico-eyebig hide" id="btnEye">X</p>
+            </div>
+        </div>
+        <input id="btnLogin" class="login-btn" disabled="disabled" type="button" value="登录"/>
+    </form>
+    <div class="login-bot">
+        <a href="forgot_pwd.html" class="frist-forget">忘记密码</a>
+        <a href="register.html" class="last-forget hap-right">立即注册</a>
+    </div>
+    <div class="login-other">
+        <p>其他方式登录</p>
+        <div class="others">
+            <a href="javascript:;" onclick="weChartClick();">微信</a>
+            <a href="javascript:;" onclick="qqClick()">QQ</a>
+            <a href="javascript:;" onclick="sinaClick()">微博</a>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../src/js/lib/jquery/jquery-2.2.0.min.js"></script>
+<script src="../src/js/lib/fastclick.js"></script>
+<script src="../src/js/util/jquery.validate.js"></script>
+<script src="../src/js/util/webviewInterface.js"></script>
+<script src="../src/js/util/common.js"></script>
+<script src="../src/js/personal/login.js"></script>

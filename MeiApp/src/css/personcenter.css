@@ -1,0 +1,254 @@
+.header {
+	height: .8rem;
+	line-height: .8rem;
+	overflow: hidden;
+	text-align: center;
+	font-size: .36rem;
+}
+.mei-btn-back {
+	float: left;
+	width: 20%;
+	font-size: .36rem;
+	color: #f00;
+	text-align: center;
+	background: #ccc;
+}
+.login-top {
+	position: relative;
+	margin-top: 1rem;
+	padding-left: .5rem;
+	height: 2rem;
+	line-height: 2rem;
+	color: #333;
+	background: #ccc;
+	font-size: .36rem;
+	overflow: hidden;
+}
+.login-head {
+	float: left;
+	margin-top: .5rem;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	background: #333;
+}
+.login-state {
+	float: right;
+	margin-right: 1rem;
+}
+login-con a {
+	display: block;
+}
+.login-row {
+	clear: both;
+	padding: 0 4%;
+	height: 1rem;
+	width: 100%;
+	line-height: 1rem;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+	font-size: .34rem;
+	color: #333;
+}
+.ico-money {
+	display: inline-block;
+	vertical-align: middle;
+	width: .6rem;
+	height: .6rem;
+	background: #333;
+}
+.login-right {
+	float: right;
+}
+// login.html
+.loginForm {
+	display: none;
+	margin: 2rem .6rem 0 .6rem;
+}
+.login-main {
+	position: relative;
+	overflow: hidden;
+}
+.login-main>.form-row {
+	position: relative;
+	z-index: 2;
+	height: .9rem;
+	line-height: .9rem;
+	overflow: hidden;
+	color: #333;
+	font-size: .36rem;
+}
+.login-main>.form-row:first-child {
+	border-bottom: 1px solid #333;
+}
+.form-row>span {
+	display: inline-block;
+	margin-left: .3rem;
+	width: 1.1rem;
+}
+.form-row>input {
+	height: .8rem;
+	width: 4rem;
+	margin-left: .2rem;
+	border: 0;
+	color: #333;
+}
+.form-row>p {
+	position: absolute;
+	right: .2rem;
+	top: .3rem;
+}
+.login-btn {
+	margin-top: .5rem;
+	width: 100%;
+	height: .9rem;
+	line-height: .9rem;
+	border: 0;
+	border-radius: .1rem;
+	background: #ccc;
+	color: #fff;
+	font-size: .4rem;
+}
+.active {
+	background: #0f4e95;
+}
+.login-bot {
+	margin: .3rem .6rem 0 .6rem;
+	font-size: .24rem;
+	overflow: hidden;
+}
+.login-bot>a {
+	color: #333;
+}
+.login-other {
+	position: fixed;
+	bottom: 0;
+	font-size: .36rem;
+	color: #333;
+	text-align: center;
+	width: 100%;
+}
+.login-other p {
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+}
+.others {
+	background: #ccc;
+	width: 100%;
+	overflow: hidden;
+}
+.others a {
+	display: inline-block;
+	float: left;
+	width: 33.33%;
+	height: 1rem;
+	line-height: 1rem;
+	color: #f00;
+}
+// forgot_pwd.html
+.section {
+	overflow: hidden;
+	width: 94%;
+	margin: 0 3%;
+	margin-bottom: .2rem;
+	font-size: .36rem;
+}
+.inputph {
+	width: 67%;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: .36rem;
+	border: 1px solid #ccc;
+}
+// 个人信息 personal_msg.html
+.personInfo {
+	position: relative;
+}
+.personInfo li {
+	clear: both;
+	padding: 0 2%;
+	height: 1rem;
+	line-height: 1rem;
+	border: 1px solid #ccc;
+	font-size: .36rem;
+}
+.msg-left {
+	float: left;
+}
+.msg-right {
+	float: right;
+}
+// 拍照
+.menu {
+	position: fixed;
+	bottom: 0;
+	top: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, .5);
+	font-size: .28rem;
+	display: non-e;
+}
+.msg-head-bottom {
+	position: fixed;
+	bottom: 0;
+	display: no--ne;
+	width: 100%
+}
+.msg-head-bottom li {
+	height: .7rem;
+	line-height: .7rem;
+	border-bottom: 1px solid #ccc;
+	background: #333;
+	color:#fff;
+	text-align: center;
+	font-size: .28rem;
+}
+.msg-head-bottom li.choose {
+	border-bottom: 1px solid #ccc;
+}
+
+// 修改用户名 personal_edit.html
+.bar{padding:0 0.3rem;margin-top:.2rem;width:100%;height:.9rem;background:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;display:-webkit-flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-align-items:center;}
+.bar .text{display:block;width:auto;font-size:.32rem;}
+.bar .price{color:#fc8;font-size:.32rem;}
+.txt-large {
+	color:#333;
+	border-bottom: 1px solid #333;
+	border-radius: 0;
+}
+.save {
+	width: 100%;
+	height: .9rem;
+	line-height: .9rem;
+	font-size: .36rem;
+}
+
+// 我的收藏 my_collect.html
+.collect {
+	color:#333;
+}
+.collect li {
+	width: 50%;
+	height: 3rem;
+	line-height: 1.5rem;
+	background: #ccc;
+	font-size: .36rem;
+	text-align: center;
+}
+
+// 收藏产品详情
+
+
+// 设置 my_set.html
+.set {
+	font-size: .36rem;
+}
+.set li {
+	height: .9rem;
+	line-height: .9rem;
+	border-bottom: 1px solid #ccc;
+	font-size: .36rem;
+}

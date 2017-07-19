@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telphone=no"/>
+	<title>新设备</title>
+	<link rel="stylesheet" type="text/css" href="../src/css/meibao.ui.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/device.css">
+    <script src="../src/js/lib/rem.js"></script>
+</head>
+<body>
+	<!-- top -->
+	<header id="header" class="header">
+		<div class="mei-btn-back" id="btnBackHome">返回</div>
+	</header>
+	<div class="navigation" id="searchBtn">
+		<ul id="searchTab">
+			<li data-type="1" class="choose"><span>新设备</span><span class="ico-arrow"></span></li>
+			<li data-type="2" class="arrow-down"><span class="arrow-down">价格</span><span class="ico-arrow"></span></li>
+		</ul>
+	</div>
+	<div class="screen-result clearfix">
+		<ul class="screen-ul">
+			<li class="screen-li" onclick="detailClick();">
+				<p>产品名称</p>
+				<p>产品价格</p>
+			</li>
+			<li class="screen-li" onclick="detailClick();">
+				<p>产品名称</p>
+				<p>产品价格</p>
+			</li>
+		</ul>
+	</div>
+	<div class="device" id="device">
+		<div class="deviceLeft"><ul></ul></div>
+		<div class="deviceCenter"><ul></ul></div>
+		<div class="deviceRight"><ul></ul></div>
+	</div>
+</body>
+</html>
+<script src="../src/js/lib/jquery/jquery-2.2.0.js"></script>
+<script src="../src/js/lib/artTemplate/template.js"></script>
+<script src="../src/js/lib/jquery/plugin/iscroll-probe.js"></script>
+<script src="../src/js/lib/fastclick.js"></script>
+<script src="../src/js/util/common.js"></script>
+<script src="../src/js/util/pullIscroll.js"></script>
+<script src="../src/js/device/device.js"></script>
+<script src="../src/js/device/option.js"></script>

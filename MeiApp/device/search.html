@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telphone=no"/>
+    <title>搜索</title>
+    <link rel="stylesheet" type="text/css" href="../src/css/meibao.ui.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/device.css">
+    <script src="../src/js/lib/rem.js"></script>
+</head>
+<body>
+    <!-- top -->
+    <header id="header" class="header">
+        <div class="mei-btn-back" id="btnBackHome">返回</div>
+        <div class="hap-header-search">
+            <!-- <span class="ico-find find-position"></span> -->
+            <span id="btnClear" class="ico-closelight closelight-position">X</span>
+            <input type="text" placeholder="设备/企业" class="ipt-large" id="txtSearch" autofocus="autofocus">
+        </div>
+        <div id="btnSearch" class="hap-header-r">搜索</div>
+    </header>
+    <!-- 历史记录 -->
+    <div class="mei-record" id="meiRecord">
+        <p class="search-tit">历史记录</p>
+        <span class="ico-del" id="recordDel">x</span>
+        <ul class="clearfix" id="record">
+            <li onclick="defaultClick()">掘进机</li>
+            <li>掘进机</li>
+            <li>掘进机</li>
+            <li>掘进机</li>
+        </ul>
+    </div>
+    <!-- 热门搜索 -->
+    <div class="hot-search">
+        <p class="search-tit">热门搜索</p>
+        <ul class="clearfix">
+            <li>掘进机</li>
+            <li>掘进机</li>
+            <li>掘进机</li>
+            <li>掘进机</li>
+        </ul>
+    </div>
+</body>
+</html>
+<script src="../src/js/lib/jquery/jquery-2.2.0.min.js"></script>
+<script src="../src/js/lib/artTemplate/template.js"></script>
+<script src="../src/js/lib/jquery/plugin/iscroll-probe.js"></script>
+<script src="../src/js/lib/fastclick.js"></script>
+<script src="../src/js/widget/layer/layer.js"></script>
+<script src="../src/js/util/pullIscroll.js"></script>  
+<script src="../src/js/util/common.js"></script>
+<script src="../src/js/device/search.js"></script>
