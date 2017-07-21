@@ -7,52 +7,80 @@
 	font-size: .36rem;
 }
 .mei-btn-back {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: .75rem;
+	height: .8rem;
+}
+.ico-back {
 	float: left;
-	width: 20%;
-	font-size:.36rem;
-	color:#f00;
-	text-align:center;
-	background:#ccc;
+	margin-left: .3rem;
+	margin-top: .15rem;
+	width: 13px;
+	height: 23px;
+	background: url("../images/arrow.png") no-repeat -5px -2px;
+	background-size: 24px 24px;
 }
-.hap-header-search {
-    float: left;
-    margin-top: 0;
-    width: 5rem;
+.mei-header-search {
+	position: relative;
+	float: left;
+	margin-top: 0;
+	margin-left: .75rem;
+	width: 5.7rem;
 }
-.hap-header-r {
-    position: absolute;
-    top: 0;
-    right: .2rem;
-    font-size: .28rem;
-    z-index: 10;
+.mei-header-r {
+	position: absolute;
+	top: 0;
+	right: .2rem;
+	font-size: .28rem;
+	z-index: 10;
 }
 .ipt-large {
-    margin-top: .1rem;
-    padding-left: .55rem;
-    border: 1px solid #4a4a4a;
-    height: .56rem;
-    width: 5rem;
-    font-size: .28rem;
-    border-radius: .3rem;
+	padding-left: .55rem;
+	border: 1px solid #4a4a4a;
+	height: .56rem;
+	width: 5.74rem;
+	font-size: .28rem;
+	border-radius: .3rem;
 }
-.closelight-position {
-    position: absolute;
-    right: 1.2rem;
-    top: .02rem;
+.find-position {
+	position: absolute;
+	left: .2rem;
+	top: .24rem;
+}
+.ico-find {
+	display: inline-block;
+	background: url("../images/find2.png") no-repeat -2px -2px;
+	background-size: 16px 16px;
+	width: 12px;
+	height: 12px;
+}
+.close-position {
+	position: absolute;
+	right: .2rem;
+	top: .2rem;
+}
+.ico-close {
+	display: inline-block;
+	background: url("../images/clear.png") no-repeat 0 0;
+	background-size: 16px 16px;
+	width: 16px;
+	height: 16px;
 }
 .navigation {
 	margin-top: .1rem;
 	overflow: hidden;
-	background:#333;
+	background: #333;
 	color: #fff;
 }
 .navigation li {
 	float: left;
-	width:50%;
+	width: 50%;
 	height: .8rem;
 	line-height: .8rem;
 	text-align: center;
-	font-size:.24rem;
+	font-size: .24rem;
 }
 .swiper-wrapper {
 	display: -webkit-box;
@@ -61,16 +89,17 @@
 	width: 100%;
 	height: 3rem;
 }
-.swiper-wrapper img { 
+.swiper-wrapper img {
 	width: 100%;
 	height: 3rem;
 }
+
 /*-------------------------------------搜索页search.html-------------------------------------*/
-.mei-record {
+.mei-record, .hot-search {
 	position: relative;
+	margin: 0 .3rem;
 }
 .search-tit {
-	margin-left: .4rem;
 	margin-top: .4rem;
 	font-size: .36rem;
 }
@@ -78,25 +107,36 @@
 	display: block;
 	position: absolute;
 	right: .4rem;
-	top: 0; 
-	width: .8rem;
-	height: .4rem;
-	line-height: .4rem;
-	background:#333;
-	color: #fff;
-	text-align: center;
-	font-size: .24rem;
+	top: 0;
+	background: url("../images/del.png") no-repeat 0 0;
+	background-size: 16px 16px;
+	width: 15px;
+	height: 15px;
 }
-.mei-record ul,.hot-search ul {
-	margin-top: .4rem;
-	margin-left: .2rem;
-}
-.mei-record ul li,.hot-search ul li{
+.recent-search-tags span, .hot-search-tags span {
+	display: block;
+	margin-top: .3rem;
+	max-width: 100%;
+	overflow: hidden;
+	padding-right: 10px;
+	padding-bottom: 10px;
 	float: left;
-	margin-right: .2rem;
-	padding: .2rem;
-	font-size: .24rem;
-	border: 1px solid #333;
+	font-size: .28rem;
+}
+.recent-search-tags a, .hot-search-tags a {
+	height: .7rem;
+	line-height: .7rem;
+	border-radius: 3px;
+	display: block;
+	width: 100%;
+	color: #686868;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	background-color: #f0f2f5;
+	padding-left: .2rem;
+	padding-right: .2rem;
+	overflow: hidden;
 }
 
 /*-------------------------------------联动-------------------------------------*/
@@ -106,8 +146,8 @@
 .device {
 	display: none;
 	position: absolute;
-    left: 0;
-    top: 1.7rem;
+	left: 0;
+	top: 1.7rem;
 	width: 100%;
 	overflow: hidden;
 	background: #fff;
@@ -170,7 +210,7 @@
 .ico-arrow {
 	margin-left: .2rem;
 	display: inline-block;
-	background: url("../images/arrow.png") no-repeat 0 0;
+	background: url("../images/arrows.png") no-repeat 0 0;
 	background-size: 21px 12px;
 	width: 21px;
 	height: 12px;
@@ -183,12 +223,13 @@
 	-webkit-transition: all .2s linear;
 	-moz-transition: all .2s linear;
 }
-.show{
+.show {
 	display: block;
 	transition: all .3s linear;
 	-webkit-transition: all .3s linear;
 	-moz-transition: all .3s linear;
 }
+
 /*-------------------------------------搜索结果default.html-------------------------------------*/
 .default-ul {
 	margin-top: 1rem;

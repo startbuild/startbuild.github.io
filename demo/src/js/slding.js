@@ -1,10 +1,9 @@
 $(function() {
-	var banner = document.querySelector(".mei-top");
-	var bannerHeight = $(".mei-top").height();
-	var $copyHeader = $(".mei-top");
+	var banner = document.querySelector(".banner");
+	var copyHeader = $(".banner");
+	var bannerHeight = $(".banner").height();
 	var topEffect = $(".main");
-	var copyHeader = $(".mei-top")
-	var headHeight = 20;
+	var headHeight = 10;
 
 	banner.addEventListener('touchstart', touchStart, false);
 	banner.addEventListener('touchmove', touchMove, false);
@@ -38,7 +37,7 @@ $(function() {
 				// 滑屏偏移量与动效缩放比例公式
 				var scale = (1 + (e.changedTouches[0].pageY - startY) / (2 * bannerHeight)).toFixed(2);
 				// 开始执行动效，显示需要放大动效的Dom结构
-				$copyHeader.addClass("show");
+				copyHeader.addClass("show");
 				// 执行放大动效几主体内容下拉动效
 				copyHeader.scaleX = copyHeader.scaleY = scale;
 				topEffect.translateY = bannerHeight * (scale - 1);

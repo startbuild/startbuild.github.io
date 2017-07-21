@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telphone=no"/>
-    <title>搜索</title>
+    <title>搜索记录</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="../src/css/meibao.ui.css">
     <link rel="stylesheet" type="text/css" href="../src/css/device.css">
     <script src="../src/js/lib/rem.js"></script>
@@ -13,34 +14,37 @@
 <body>
     <!-- top -->
     <header id="header" class="header">
-        <div class="mei-btn-back" id="btnBackHome">返回</div>
-        <div class="hap-header-search">
-            <!-- <span class="ico-find find-position"></span> -->
-            <span id="btnClear" class="ico-closelight closelight-position">X</span>
+        <div class="mei-btn-back" id="btnBackHome">
+            <span class="ico-back"></span>
+        </div>
+        <div class="mei-header-search"> 
+            <span class="ico-find find-position"></span>
+            <span id="btnClear" class="ico-close close-position"></span>
             <input type="text" placeholder="设备/企业" class="ipt-large" id="txtSearch" autofocus="autofocus">
         </div>
-        <div id="btnSearch" class="hap-header-r">搜索</div>
+        <div id="btnSearch" class="mei-header-r">搜索</div>
     </header>
     <!-- 历史记录 -->
     <div class="mei-record" id="meiRecord">
         <p class="search-tit">历史记录</p>
-        <span class="ico-del" id="recordDel">x</span>
-        <ul class="clearfix" id="record">
-            <li onclick="defaultClick()">掘进机</li>
-            <li>掘进机</li>
-            <li>掘进机</li>
-            <li>掘进机</li>
-        </ul>
+        <span class="ico-del" id="recordDel"></span>
+        <div id="record" class="recent-search-tags clearfix">
+            <span onclick="defaultClick()">
+                <a href="javascript:void(0);">掘进机</a>
+            </span>
+            <span onclick="defaultClick()">
+                <a href="javascript:void(0);">掘进机</a>
+            </span>
+        </div>
     </div>
     <!-- 热门搜索 -->
     <div class="hot-search">
         <p class="search-tit">热门搜索</p>
-        <ul class="clearfix">
-            <li>掘进机</li>
-            <li>掘进机</li>
-            <li>掘进机</li>
-            <li>掘进机</li>
-        </ul>
+        <div id="record2" class="hot-search-tags clearfix">
+            <span onclick="defaultClick()">
+                <a href="javascript:void(0);">掘进机</a>
+            </span>
+        </div>
     </div>
 </body>
 </html>

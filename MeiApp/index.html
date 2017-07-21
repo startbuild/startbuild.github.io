@@ -6,11 +6,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telphone=no"/>
     <title>煤宝网</title>
-    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="src/js/lib/rem.js"></script>
     <link rel="stylesheet" type="text/css" href="src/js/widget/swiper/swiper-3.2.7.min.css">
     <link rel="stylesheet" type="text/css" href="src/css/meibao.ui.css">
-    <link rel="stylesheet" type="text/css" href="src/css/index.css">
-    <script src="src/js/lib/rem.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/css/index.css">    
 </head>
 <body class="bg-main">
     <!-- top -->
@@ -50,10 +50,48 @@
         </li>
     </ul>                                                                                   
     <!-- 热门产品推荐 -->
-    <div class="divs">
+    <div class="recommend">
+       <div class="recomm-tit">
+           <span class="ico-recommend"></span>
+           <p>热门产品推荐</p>
+       </div>
        <ul class="hot">
-            <li onclick="detailClick();">热门产品推荐</li>
-            <li onclick="detailClick();">热门产品推荐</li>
+            <li onclick="detailClick();">
+                <div class="hot-top">
+                    <img src="src/images/cp1.jpg" class="cp-img">
+                    <div class="cps-type">
+                        <div class="type-inner type-old">二手设备</div>
+                    </div>
+                </div>
+                <div class="hot-bot">
+                    <p class="cps-name">掘进机EBZ200</p>
+                    <p class="cps-price">煤宝评估价¥160万</p>
+                </div>
+            </li>
+            <li onclick="detailClick();">
+                <div class="hot-top">
+                    <img src="src/images/cp2.jpg" class="cp-img">
+                    <div class="cps-type">
+                        <div class="type-inner type-rent">租赁设备</div>
+                    </div>
+                </div>
+                <div class="hot-bot">
+                    <p class="cps-name">刮板机SGZ630/220</p>
+                    <p class="cps-price">煤宝评估价¥90万</p>
+                </div>
+            </li>
+            <li onclick="detailClick();">
+                <div class="hot-top">
+                    <img src="src/images/cp3.jpg" class="cp-img">
+                    <div class="cps-type">
+                        <div class="type-inner type-repair">维修设备</div>
+                    </div>
+                </div>
+                <div class="hot-bot">
+                    <p class="cps-name">刮板输送机SGZ800/630</p>
+                    <p class="cps-price">煤宝评估价¥90万</p>
+                </div>
+            </li>
         </ul> 
     </div>
     </div>
